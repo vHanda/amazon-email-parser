@@ -4,10 +4,10 @@ go 1.18
 
 require (
 	github.com/PuerkitoBio/goquery v1.8.0
-	github.com/davecgh/go-spew v1.1.0
 	github.com/jhillyerd/enmime v0.9.4
 	github.com/shopspring/decimal v1.3.1
 	github.com/ztrue/tracerr v0.3.0
+	gotest.tools/v3 v3.3.0
 )
 
 require (
@@ -24,5 +24,4 @@ require (
 	github.com/ssor/bom v0.0.0-20170718123548-6386211fdfcf // indirect
 	golang.org/x/net v0.0.0-20210916014120-12bc252f5db8 // indirect
 	golang.org/x/text v0.3.6 // indirect
-	gotest.tools/v3 v3.3.0 // indirect
 )
