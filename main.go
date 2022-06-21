@@ -1,6 +1,9 @@
 package main
 
 import (
+	"bufio"
+	"bytes"
+	"encoding/csv"
 	"fmt"
 	"io"
 	"log"
@@ -8,7 +11,6 @@ import (
 	"strings"
 
 	"github.com/PuerkitoBio/goquery"
-	"github.com/davecgh/go-spew/spew"
 	"github.com/jhillyerd/enmime"
 	"github.com/shopspring/decimal"
 )
@@ -183,7 +185,25 @@ func (d *dumper) dump(args []string) int {
 		orders = append(orders, o)
 	}
 
-	spew.Dump(orders)
+	var b bytes.Buffer
+	csvWriter := csv.NewWriter(bufio.NewWriter(&b))
+
+	var data [][]string
+
+	header := []string{"ID", "name", "merchant", "currency", "price"}
+	data = append(data, header)
+
+	for _, o := range orders {
+		row := []string{o.ID, o.Name, o.Merchant, o.currency, o.price.String()}
+		data = append(data, row)
+	}
+
+	err = csvWriter.WriteAll(data)
+	if err != nil {
+		log.Fatalln(err)
+	}
+
+	fmt.Println(b.String())
 
 	return 0
 }
