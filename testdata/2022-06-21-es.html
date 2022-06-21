@@ -1,0 +1,990 @@
+<html xmlns="http://www.w3.org/1999/xhtml">
+ <head> 
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" /> 
+  <style type="text/css">
+body {
+    background-color: #ffffff;
+	margin:0;
+	font:12px/16px Arial, sans-serif;
+}
+
+a {
+	text-decoration:none;
+	color:#006699;
+	font:12px/16px Arial, sans-serif;
+}
+
+a img {
+	border:0;
+}
+
+h2 {
+	font-size:20px;
+	line-height:24px;
+	margin:0;
+	padding:0;
+	font-weight:normal;
+	color:#000 !important;
+}
+
+h3 {
+	font-size: 18px;
+	color:#cc6600;
+	margin:15px 0 0 0;
+	font-weight: normal;
+}
+
+h4 {
+	font-size:14px;
+	margin:0;
+	font-weight:normal;
+}
+
+p {
+	margin:4px 0 0 0;
+	font:12px/16px Arial, sans-serif;
+}
+
+table {
+	border-collapse:collapse;
+}
+
+td {
+	vertical-align: top;
+	font-size: 12px;
+	line-height: 16px;
+	font-family: Arial, sans-serif;
+}
+
+/* container */
+#container {
+	width:640px;
+	color:#333;
+	margin:0 auto;
+}
+
+#container .frame {
+	padding:0 20px 20px 20px;
+}
+
+/* content tables */
+#main, #header, #summary, #desiredInformation, #orderDetails, #itemDetails, #costBreakdown, #costBreakdownNoAsin,
+#selfService, #closing, #marketingContent, #legalCopy {
+	width:100%;
+}
+
+/* header */
+#header .logo {
+	width:115px;
+	padding:18px 0 0 0;
+}
+
+#header .navigation {
+	text-align:right;
+	padding:5px 0;
+	border-bottom:1px solid #ccc;
+	white-space:nowrap;
+}
+
+#header .navigation a {
+	border-right:0px solid #CCC;
+	margin-right:0px;
+	padding-right:0px;
+}
+
+#header .navigation span {
+	text-decoration:none;
+	color:#CCC;
+	font-size:15px;
+	font-family:Arial, sans-serif;
+}
+
+#header .navigation a.last {
+	border:0;
+	margin:0;
+	padding:0;
+}
+
+#header .title {
+	text-align:right;
+	padding:7px 0 5px 0;
+}
+
+#header .title img {
+	padding:0 4px 0 0;
+}
+
+/* summary */
+#summary a{
+	text-decoration:none;
+	color:#006699;
+}
+
+#summary p {
+	margin:5px 0 0 0;
+}
+
+/* critical info */
+#criticalInfo {
+	border-top:3px solid #2d3741;
+	width: 95%;
+}
+
+#criticalInfo td {
+	font-size:14px;
+	padding:11px 18px 18px 18px;
+	width:50%;
+}
+
+#criticalInfo .detailsContent {
+    background-color:#efefef;
+}
+
+#criticalInfo .label {
+	color:#666;
+}
+
+#criticalInfo p {
+	margin:2px 0 9px 0;
+}
+
+#criticalInfo span {
+	color:#666;
+}
+
+#criticalInfo a {
+	font-size:11px;
+	color:#006699;
+	text-decoration:none;
+}
+
+#cancelOrder p {
+    font: 11px/ 16px Arial, sans-serif;
+    color: rgb(51, 51, 51);
+}
+/* desiredInformation */
+#desiredInformation a {
+	text-decoration:none;
+	color:#006699;
+}
+
+/* buttons */
+.button {
+	text-decoration:none !important;
+	display:block;
+	height:26px;
+	display:inline-block;
+	margin:0 0 2px 0;
+}
+
+.button.small {
+	height:20px;
+}
+
+.button .expandable {
+	float:left;
+	overflow:hidden;
+}
+
+.button .text {
+	color:#000f68;
+	font-size:12px;
+	position:relative;
+	z-index:10;
+	top:-22px;
+	left:-12px;
+	text-align:center;
+}
+
+.button.secondary .text {
+	left:0;
+}
+
+.button.small .text {
+	top:-20px;
+	left:0;
+	font-size:11px;
+}
+
+/* supporting details */
+#supportingDetails {
+	font-size:11px;
+	color:#666;
+	line-height:14px;
+	margin:10px 20px;
+}
+
+#supportingDetails {
+	margin:0 18px 0 18px;
+}
+
+/* order details */
+#orderDetails h3 {
+	border-bottom:1px solid #ccc;
+	margin:0 0 3px 0;
+	padding:0 0 3px 0;
+}
+
+#orderDetails .frame {
+	padding:16px 20px 6px 20px;
+}
+
+#orderDetails .orderDate {
+	color:#666666;
+	font-size:12px;
+}
+
+#orderDetails span {
+	font-size:12px;
+	color:#666;
+}
+
+#orderDetails p {
+	margin:2px 0 9px 0;
+}
+
+/* item details */
+#itemDetails {
+	width: 95%;
+}
+
+#itemDetails .photo {
+	width:150px;
+	text-align:center;
+	padding:16px 0 10px 0;
+}
+
+#itemDetails .photo .play img {
+	margin:3px 0 0 0;
+}
+
+#itemDetails .name {
+	color:#666;
+	padding:10px 0 0 0;
+}
+
+#itemDetails ul {
+	margin:0;
+	padding:0;
+}
+
+#itemDetails ul li {
+	list-style-type:none;
+	line-height:14px;
+	padding:0 0 4px 0;
+}
+
+#itemDetails ul li a {
+	font-size:14px;
+}
+
+#itemDetails .name p {
+	margin:0;
+	padding:10px 0 0 0;
+	font-size:12px;
+	line-height:14px;
+}
+
+#itemDetails .name p a {
+	text-decoration:none;
+    color:#006699;
+}
+
+
+#itemDetails .name .share {
+	margin:3px 0 15px 0;
+}
+
+#itemDetails .name .share a {
+	margin: 4px 5px 0 0;
+	font-size:0;
+}
+
+#itemDetails .name .supportingDetails,
+#itemDetails .name .supportingDetails a {
+	margin:8px 0 0 0;
+	font-size:12px;
+}
+
+#itemDetails .price {
+	text-align:right;
+	font-size:14px;
+	padding:10px 10px 0 10px;
+	white-space:nowrap;
+}
+
+#itemDetails .price a {
+	text-decoration:none;
+    color:#006699;
+}
+
+#itemDetails .divider {
+	border-top:1px solid #eaeaea;
+	padding:0 0 16px 0;
+}
+
+#itemDetails .name table {
+border-collapse: separate;
+}
+
+/* cost breakdown */
+#costBreakdow {
+	width:95%;
+}
+
+#costBreakdown td {
+	text-align:right;
+	line-height:18px;
+	padding:0 10px 0 0;
+}
+
+#costBreakdownNoAsin td {
+    text-align: left !important;
+    line-height: 18px;
+    padding: 0 10px 0 0;
+}
+
+#costBreakdown .divider, #costBreakdownNoAsin .divider {
+	border-top:1px solid #eaeaea;
+	padding:0 0 16px 0;
+}
+
+#costBreakdown .end, #costBreakdownNoAsin .end {
+	padding:0 0 16px 0;
+}
+
+#costBreakdown .start, #costBreakdownNoAsin .start {
+	padding: 0 0 16px 0;
+}
+
+#costBreakdown .price {
+	width:150px;
+}
+
+#costBreakdownNoAsin .price {
+	width: 70%;
+}
+
+#costBreakdown .total, #costBreakdownNoAsin .total {
+	font-size:14px;
+	font-weight:bold;
+	font: 12px/ 16px Arial, sans-serif;
+}
+
+#costBreakdown .disclaimer, #costBreakdownNoAsin .disclaimer {
+	text-align:right;
+	font: 12px
+}
+
+.deferred-payments-separator {
+    border: 1px solid #cbcfd4;
+}
+
+/* Critical Information Cost Breakdown */
+#criticalInfo-costBreakdown .total {
+    font-weight:bold;
+    font: 14px/ 16px Arial, sans-serif;
+}
+
+#criticalInfo-costBreakdown .total-value {
+    font-weight:bold;
+    font: 14px/ 16px Arial, sans-serif;
+    text-align: right;
+}
+
+#criticalInfo-costBreakdown .nonTotalInformation {
+    font-size: 12px;
+    font: 12px/ 16px Arial, sans-serif;
+}
+
+#criticalInfo-costBreakdown .nonTotalInformation-value {
+    font-size: 12px;
+    font: 12px/ 16px Arial, sans-serif;
+    text-align: right;
+}
+
+#criticalInfo-costBreakdown td {
+    padding:11px 0px 0px 0px !important;
+}
+
+#criticalInfo-costBreakdown .lowerPriorityInformation {
+    color: #767676;
+}
+
+/* additional shipments */
+#additionalShipments {
+	font-size:11px;
+}
+
+#additionalShipments h3 {
+	margin:10px 0 0 0;
+}
+
+#additionalShipments p {
+	margin:10px 20px 0px 20px;
+}
+
+#additionalShipments .orderDate {
+	color:#666666;
+	font-size:12px;
+}
+
+#additionalShipments .details {
+	padding:10px 20px 10px 20px;
+}
+
+#additionalShipments .details .label {
+	color:#666666;
+	font-weight:bold;
+}
+
+#additionalShipments .details .edd, #additionalShipments .details .quantity {
+	font-weight:bold;
+}
+
+/* self service */
+#selfService .divider {
+	border-top:1px solid #ccc;
+	padding:0 0 16px 0;
+}
+
+#selfService a{
+	text-decoration:none;
+	color:#006699;
+}
+
+/* closing */
+#closing {
+	padding:0 0 0 0;
+	border-collapse:collapse;
+}
+
+#closing p {
+	padding:0 0 20px 0;
+	border-bottom:1px solid #eaeaea;
+	margin:10px 0 0 0;
+}
+
+#closing .signature {
+	font-size:16px;
+	font-weight:bold;
+}
+
+#closing a{
+	text-decoration:none;
+	color:#006699;
+}
+
+/* marketing content */
+#marketingContent {
+	border-bottom:1px solid #eaeaea;
+	border-collapse:collapse;
+	padding:0;
+}
+
+#marketingContent td.recs {
+	padding:10px 0;
+}
+
+#marketingContent td.right {
+	padding:10px 15px 10px 0;
+}
+
+#marketingContent td.left {
+	padding:10px 0 10px 15px;
+}
+
+#middleCenterMC {
+	text-align:center;
+}
+
+#middleCenterMC img {
+	width:85%;
+}
+
+/* legal copy */
+#legalCopy td {
+	padding:20px 0 0 0;
+}
+
+#legalCopy p {
+	font-size:11px;
+	color:#666;
+	line-height:16px;
+	margin:0 0 10px 0;
+        font:11px;
+}
+
+#legalCopy a {
+	font:11px/16px Arial, sans-serif;
+	text-decoration:none;
+	color:#006699;
+}
+
+#legalExceptionsList li{
+	padding-left: 10px;
+}
+
+#extendedLegalInfoBlock {
+	font-size:11px;
+	color:#666;
+	line-height:16px;
+	margin:0 0 10px 0;
+}
+
+/* reg fee */
+#regFee td {
+	colspan: "2";
+	border-top:1px solid #ccc;
+}
+
+/* html button */
+
+.link {
+    color: rgb(17, 17, 17) !important;
+    text-decoration: none !important;
+    font: 16px/ 18px Arial, sans-serif !important;
+    padding: 10px 12px;
+    line-height: 1.5;
+    border-radius: 10px;
+    border-style: solid;
+    border-color: #000000;
+    border-width: 1px;
+    background: #F0C14B linear-gradient(#F7DFA5, #F0C14B) repeat scroll 0% 0%;
+    background-color: #F0C14B;
+    white-space: nowrap;
+}
+
+.a-icon-info, .a-icon-small {
+    background-position: -166px -130px;
+    height: 13px;
+    width: 14px;
+}
+
+.a-icon {
+    background-image: url(https://m.media-amazon.com/images/G/01/AUIClients/AmazonUIBaseCSS-sprite_1x-28bd59af93d9b1c745bb0aca4de58763b54df7cf._V2_.png);
+    -webkit-background-size: 400px 670px;
+    display: inline-block;
+}
+
+.a-text-italic {
+    font-style: italic !important;
+}
+
+.a-size-small {
+    font-size: 12px !important;
+    line-height: 1.5 !important;
+}
+.inline-block{
+    display: inline-block;
+}
+
+/* Styling for Top Amabot Banner */
+#topAmabotBannerTextArea #topAmabotBannerHeaderText {
+    font: bold 14px Arial, sans-serif;
+    color: #333;
+}
+
+#topAmabotBannerTextArea #topAmabotBannerHeaderTextClickable {
+    font: bold 14px Arial, sans-serif;
+    color: #069;
+}
+
+#topAmabotBannerTextArea #topAmabotBannerBodyPrefix {
+    font: 14px Arial, sans-serif;
+    color: #333;
+}
+
+#topAmabotBannerTextArea #topAmabotBannerBodyPrefixClickable {
+    font: bold 14px Arial, sans-serif;
+    color: #069;
+}
+
+#topAmabotBannerTextArea #topAmabotBannerBody {
+    font: 14px Georgia, serif;
+    line-height: 1.2;
+    color: #333;
+}
+
+#topAmabotBannerTextArea #topAmabotBannerBodyEmphasized {
+    font: 14px Georgia, serif;
+    line-height: 1.2;
+    font-style: italic;
+    color: #333;
+}
+
+#postOrderSummaryAmabotSlot #dykSlotWrapper {
+    margin-top: 0px;
+}
+
+#dykSlotWrapper td {
+    vertical-align: middle;
+}
+
+#dykSlotTextContainer {
+    padding: 0px;
+}
+
+/* To fix the blue href links in gmail clients */
+.noColorAndTextDecoration a {
+    color:#000 !important;
+    text-decoration:none !important;
+}
+
+    .buttonComponent {
+    border-collapse: separate;
+    text-decoration: none !important;
+    line-height: 47px;
+    border-radius: 3px;
+    border-style: solid;
+    border-color: #CBA957;
+    border-width: 1px;
+    background: #F0C354 linear-gradient(#F7DEA2, #F0C354) repeat scroll 0% 0%;
+    background-color: #ffa723;
+    white-space: nowrap;
+    min-width: 222px;
+    min-height: 45px;
+    }
+
+    .buttonComponent td {
+    background-color: transparent !important;
+    }
+
+    .buttonComponentLink {
+    color: rgb(27, 27, 27) !important;
+    font: 16px/ 18px Arial, sans-serif !important;
+    display: table-cell;
+    margin: auto 0;
+    vertical-align: middle;
+    text-decoration: none !important;
+
+    min-width: 222px;
+    height: 45px;
+    }
+
+
+</style> 
+  <title>
+Tu pedido de Amazon.es de &quot;PONY DANCE Cortinas...&quot; y 1 producto(s) m&aacute;s  </title> 
+ </head> 
+ <body><img width="1" height="1" src="https://www.amazon.es/gp/r.html?C=3M2WIG6WX58VI&K=1DKI2DIF4Y4X8&M=urn:rtn:msg:2022062115594067de7d7e5765406c9871c8827500p0eu&R=9WBLFHXMJVI9&T=O&U=https%3A%2F%2Fimages-eu.ssl-images-amazon.com%2Fimages%2FG%2F01%2Fnav%2Ftransp.gif&H=57YO695L3XO80WAO4IR0IWIQI08A&ref_=pe_27091411_487056151_opens" /> 
+  <table id="container" dir="ltr"> 
+   <tbody>
+    <tr> 
+     <td class="frame"> 
+      <table id="main"> 
+       <tbody>
+        <tr> 
+         <td> 
+          <table id="header"> 
+           <tbody>
+            <tr> 
+             <td rowspan="2" class="logo"> <a href="https://www.amazon.es/gp/r.html?C=3M2WIG6WX58VI&K=1DKI2DIF4Y4X8&M=urn:rtn:msg:2022062115594067de7d7e5765406c9871c8827500p0eu&R=1DUPT973F05HZ&T=C&U=https%3A%2F%2Fwww.amazon.es%2Fref%3Dpe_27091411_487056151_TE_logo&H=NLN539LFV2JIGHUQJYBIZU0OPNUA&ref_=pe_27091411_487056151_TE_logo" title="Visita Amazon.es"> <img alt="Amazon.es" src="https://m.media-amazon.com/images/G/30/email/logos/ES_prime_142x48.png" style="border: 0; width: 115px;" /> </a> </td> 
+             <td class="navigation"> </td>
+             <td style="width: 100%; padding:7px 5px 0;" class="navigation"> <a href="https://www.amazon.es/gp/r.html?C=3M2WIG6WX58VI&K=1DKI2DIF4Y4X8&M=urn:rtn:msg:2022062115594067de7d7e5765406c9871c8827500p0eu&R=2MV9KFKZBOD9R&T=C&U=https%3A%2F%2Fwww.amazon.es%2Fgp%2Fcss%2Fyour-orders-access%3Fref_%3Dpe_27091411_487056151_TE_yo&H=KA5OTAFRV56WD52LGIIABTTY8T4A&ref_=pe_27091411_487056151_TE_yo">Mis pedidos</a> </td> 
+             <td class="navigation"> <span>&nbsp;|&nbsp;</span> <a href="https://www.amazon.es/gp/r.html?C=3M2WIG6WX58VI&K=1DKI2DIF4Y4X8&M=urn:rtn:msg:2022062115594067de7d7e5765406c9871c8827500p0eu&R=3RARX0ODFW0M1&T=C&U=https%3A%2F%2Fwww.amazon.es%2Fgp%2Fcss%2Fyour-account-access%3Fref_%3Dpe_27091411_487056151_TE_ya&H=VESGAEZ286QZUVYGTJSDAXA8V5UA&ref_=pe_27091411_487056151_TE_ya">Mi cuenta</a> <span>&nbsp;|&nbsp;</span> <a href="https://www.amazon.es/gp/r.html?C=3M2WIG6WX58VI&K=1DKI2DIF4Y4X8&M=urn:rtn:msg:2022062115594067de7d7e5765406c9871c8827500p0eu&R=3EBEFRK6C11VA&T=C&U=https%3A%2F%2Fwww.amazon.es%2Fref%3Dpe_27091411_487056151_TE_cn&H=7Z7ARJBXSCJP4BNVXVED9K77DXMA&ref_=pe_27091411_487056151_TE_cn">Amazon.es</a> </td>  
+            </tr> 
+            <tr> 
+             <td colspan="3" class="title"> <h2> Confirmaci&oacute;n del pedido </h2> Pedido n&ordm; <a href="https://www.amazon.es/gp/r.html?C=3M2WIG6WX58VI&K=1DKI2DIF4Y4X8&M=urn:rtn:msg:2022062115594067de7d7e5765406c9871c8827500p0eu&R=ILJ4AYNZ07C6&T=C&U=https%3A%2F%2Fwww.amazon.es%2Fgp%2Fcss%2Fsummary%2Fedit.html%3Fie%3DUTF8%26orderID%3D407-5248971-1092319%26ref_%3Dpe_27091411_487056151_TE_order&H=AH8HMJEZ2ACKDC5KVPFRSD6PMR0A&ref_=pe_27091411_487056151_TE_order" class="inline-block">407-5248971-1092319 </a> <br /> Pedido n&ordm; <a href="https://www.amazon.es/gp/r.html?C=3M2WIG6WX58VI&K=1DKI2DIF4Y4X8&M=urn:rtn:msg:2022062115594067de7d7e5765406c9871c8827500p0eu&R=3V7GN4JZRB3GK&T=C&U=https%3A%2F%2Fwww.amazon.es%2Fgp%2Fcss%2Fsummary%2Fedit.html%3Fie%3DUTF8%26orderID%3D407-0402347-9633967%26ref_%3Dpe_27091411_487056151_TE_order&H=4UTRO23FWKC38ICQ8TXF4CD6HXGA&ref_=pe_27091411_487056151_TE_order" class="inline-block">407-0402347-9633967 </a> <br /> </td> 
+            </tr> 
+           </tbody>
+          </table> </td> 
+        </tr> 
+        <tr> 
+         <td> 
+          <table id="summary"> 
+           <tbody>
+            <tr> 
+             <td> <h3> Hola Vishesh : </h3> <p> Gracias por tu pedido. Te mandaremos otro e-mail cuando enviemos tu(s) producto(s). La fecha estimada de entrega se indica a continuaci&oacute;n. Visita <a href="https://www.amazon.es/gp/r.html?C=3M2WIG6WX58VI&K=1DKI2DIF4Y4X8&M=urn:rtn:msg:2022062115594067de7d7e5765406c9871c8827500p0eu&R=1QK4WTRBBOC44&T=C&U=https%3A%2F%2Fwww.amazon.es%2Fgp%2Fcss%2Fyour-orders-access%3Fref_%3Dpe_27091411_487056151_TE_gs&H=AAN3CMXOTDIYVTDNDUNFJYI0BZOA&ref_=pe_27091411_487056151_TE_gs">Mis pedidos</a> en Amazon.es para consultar el estado de tu pedido o realizar cambios. </p> </td> 
+            </tr> 
+            <tr> 
+             <td> <p> Hemos dividido tu compra en 2 pedidos. </p> </td> 
+            </tr> 
+           </tbody>
+          </table> </td> 
+        </tr> 
+        <tr> 
+         <td> 
+          <table id="desiredInformation"> 
+          </table> </td> 
+        </tr> 
+        <tr> 
+         <td style="border-bottom:1px solid #ccc;"> <h3>Resumen del pedido</h3> </td> 
+        </tr> 
+        <tr> 
+         <td style="padding-left:32px;"> 
+          <table id="orderDetails"> 
+           <tbody>
+            <tr> 
+             <td> Pedido n&ordm; <a href="https://www.amazon.es/gp/r.html?C=3M2WIG6WX58VI&K=1DKI2DIF4Y4X8&M=urn:rtn:msg:2022062115594067de7d7e5765406c9871c8827500p0eu&R=11SKQRPB10FZ0&T=C&U=https%3A%2F%2Fwww.amazon.es%2Fgp%2Fcss%2Fsummary%2Fedit.html%3Fie%3DUTF8%26orderID%3D407-5248971-1092319%26ref_%3Dpe_27091411_487056151_TE_order&H=SFWFGWYRVG1C5HMAEMZIGLOWXV8A&ref_=pe_27091411_487056151_TE_order" class="inline-block">407-5248971-1092319</a> <br /> <span>Realizado el martes, 21 de junio de 2022</span> </td> 
+            </tr> 
+           </tbody>
+          </table> </td> 
+        </tr> 
+        <tr> 
+         <td style="padding-left:32px;"> 
+          <table id="criticalInfo"> 
+           <tbody>
+            <tr class="detailsContent"> 
+             <td> <p> <span>Entrega: </span> <br /> <b style="color:#009900;"> jueves, junio 23 </b> </p> <p> <span>Tu opci&oacute;n de env&iacute;o: </span> <br /> <b> <img src="https://m.media-amazon.com/images/G/30/email/logos/prime_39x10.png" /> Env&iacute;o Premium </b> </p> <p> <span>Tu preferencia de env&iacute;o: </span> <br /> <b>Enviar a medida que est&eacute;n disponibles </b> </p> <br /> 
+              <table class="buttonComponent" bgcolor="#ffa723" width="222"> 
+               <tbody>
+                <tr> 
+                 <td style="width:100%; vertical-align:middle; padding: 0px;" align="center" valign="middle" width="100%" height="45"> <a class="buttonComponentLink" href="https://www.amazon.es/gp/r.html?C=3M2WIG6WX58VI&K=1DKI2DIF4Y4X8&M=urn:rtn:msg:2022062115594067de7d7e5765406c9871c8827500p0eu&R=3S42RWE43C0BR&T=C&U=https%3A%2F%2Fwww.amazon.es%2Fgp%2Fcss%2Fsummary%2Fedit.html%3Fie%3DUTF8%26orderID%3D407-5248971-1092319%26ref_%3Dpe_27091411_487056151_TE_on_sh&H=MCW421Q3AAIP3COYDXS5FTYZYKKA&ref_=pe_27091411_487056151_TE_on_sh">Ver los detalles del pedido</a> </td> 
+                </tr> 
+               </tbody>
+              </table> </td> 
+             <td> <p> <span>Tu pedido se enviar&aacute; a: </span> <br /> <b> Vishesh <br /> Barcelona, Barcelona <br /> Espa&ntilde;a </b> </p> 
+              <table id="criticalInfo-costBreakdown"> 
+               <tbody>
+                <tr> 
+                 <td class="total"> <strong> Importe total del pedido: </strong> </td> 
+                 <td class="total-value"> <strong>EUR 26,95</strong> </td> 
+                </tr> 
+                <tr> 
+                 <td rowspan="2" class="nonTotalInformation"> M&eacute;todo de pago seleccionado: </td> 
+                 <td class="price nonTotalInformation-value"> Mastercard </td> 
+                </tr> 
+                <tr></tr> 
+                <tr> 
+                 <td colspan="2" class="end"></td> 
+                </tr> 
+                <tr> 
+                 <td colspan="2" class="divider"></td> 
+                </tr> 
+               </tbody>
+              </table> </td>
+            </tr> 
+           </tbody>
+          </table> </td> 
+        </tr> 
+        <tr> 
+         <td style="padding-left:32px;"> 
+          <table style="width:95%;" id="itemDetails"> 
+           <tbody>
+            <tr> 
+             <td class="photo"> <a href="https://www.amazon.es/gp/r.html?C=3M2WIG6WX58VI&K=1DKI2DIF4Y4X8&M=urn:rtn:msg:2022062115594067de7d7e5765406c9871c8827500p0eu&R=3RUSZ23BVKA2B&T=C&U=https%3A%2F%2Fwww.amazon.es%2Fdp%2FB08SBH6XJF%2Fref%3Dpe_27091411_487056151_TE_item_image&H=7ULSENWEZ3NJXVMOFMDBF2TMAMYA&ref_=pe_27091411_487056151_TE_item_image"> <img id="asin" src="https://m.media-amazon.com/images/I/41icR2wAqJS._SY115_SX115_.jpg" /> </a> </td> 
+             <td class="name"> <a href="https://www.amazon.es/gp/r.html?C=3M2WIG6WX58VI&K=1DKI2DIF4Y4X8&M=urn:rtn:msg:2022062115594067de7d7e5765406c9871c8827500p0eu&R=252BIAZUQS4GN&T=C&U=https%3A%2F%2Fwww.amazon.es%2Fdp%2FB08SBH6XJF%2Fref%3Dpe_27091411_487056151_TE_item&H=N0RY0TWX5SIAAQINNFPSZ5NAUSWA&ref_=pe_27091411_487056151_TE_item"> PONY DANCE Cortinas Dormitorio Matrimonio - Cortinas Opacas Terimicas Aislantes para Sal&oacute;n con Trabillas, 2 Piezas, 140 x 160 cm, Moca </a> <br /> Condici&oacute;n: Nuevo <br /> Vendido por <a href="https://www.amazon.es/gp/r.html?C=3M2WIG6WX58VI&K=1DKI2DIF4Y4X8&M=urn:rtn:msg:2022062115594067de7d7e5765406c9871c8827500p0eu&R=2W3GDQTCOO2HW&T=C&U=https%3A%2F%2Fwww.amazon.es%2Fgp%2Fhelp%2Fseller%2Fhome.html%3Fref_%3Dpe_27091411_487056151_TE_seller%26ie%3DUTF8%26seller%3DA2CD6TVOHU8QOU&H=QMC5JAZFJSDTMTWOYMJACLDGGG8A&ref_=pe_27091411_487056151_TE_seller">RYB HOME EU</a> <br /> <a href="https://www.amazon.es/gp/f.html?C=3M2WIG6WX58VI&K=1DKI2DIF4Y4X8&M=urn:rtn:msg:2022062115594067de7d7e5765406c9871c8827500p0eu&R=7AJ2JSJD1ACD&T=C&U=https%3A%2F%2Fwww.amazon.es%2Flogistica_amazon%3Fref_%3Dpe_27091411_487056151_TE_fbaen&H=N3GVDDLGIMDNLKCDYSZ9C3ALNA8A&ref_=pe_27091411_487056151_TE_fbaen">Gestionado por Amazon</a> </td> 
+             <td class="price"> <strong>EUR 26,95</strong> <br /> </td> 
+            </tr> 
+           </tbody>
+          </table> </td> 
+        </tr> 
+        <tr> 
+         <td style="padding-left:32px;"> 
+          <table id="orderDetails"> 
+           <tbody>
+            <tr> 
+             <td> Pedido n&ordm; <a href="https://www.amazon.es/gp/r.html?C=3M2WIG6WX58VI&K=1DKI2DIF4Y4X8&M=urn:rtn:msg:2022062115594067de7d7e5765406c9871c8827500p0eu&R=29KAURMHWRD73&T=C&U=https%3A%2F%2Fwww.amazon.es%2Fgp%2Fcss%2Fsummary%2Fedit.html%3Fie%3DUTF8%26orderID%3D407-0402347-9633967%26ref_%3Dpe_27091411_487056151_TE_order&H=RADAW174CGA85AMUFRLSYZ7OVLUA&ref_=pe_27091411_487056151_TE_order" class="inline-block">407-0402347-9633967</a> <br /> <span>Realizado el martes, 21 de junio de 2022</span> </td> 
+            </tr> 
+           </tbody>
+          </table> </td> 
+        </tr> 
+        <tr> 
+         <td style="padding-left:32px;"> 
+          <table id="criticalInfo"> 
+           <tbody>
+            <tr class="detailsContent"> 
+             <td> <p> <span>Entrega: </span> <br /> <b style="color:#009900;"> viernes, junio 24 - <br /> lunes, junio 27 </b> </p> <p> <span>Tu opci&oacute;n de env&iacute;o: </span> <br /> <b> Entrega est&aacute;ndar </b> </p> <br /> 
+              <table class="buttonComponent" bgcolor="#ffa723" width="222"> 
+               <tbody>
+                <tr> 
+                 <td style="width:100%; vertical-align:middle; padding: 0px;" align="center" valign="middle" width="100%" height="45"> <a class="buttonComponentLink" href="https://www.amazon.es/gp/r.html?C=3M2WIG6WX58VI&K=1DKI2DIF4Y4X8&M=urn:rtn:msg:2022062115594067de7d7e5765406c9871c8827500p0eu&R=VM7RR40NPVDE&T=C&U=https%3A%2F%2Fwww.amazon.es%2Fgp%2Fcss%2Fsummary%2Fedit.html%3Fie%3DUTF8%26orderID%3D407-0402347-9633967%26ref_%3Dpe_27091411_487056151_TE_on_sh&H=OSFJ6I2XRYT36G5TY6HVLWS3STKA&ref_=pe_27091411_487056151_TE_on_sh">Ver los detalles del pedido</a> </td> 
+                </tr> 
+               </tbody>
+              </table> </td> 
+             <td> <p> <span>Tu pedido se enviar&aacute; a: </span> <br /> <b> Vishesh <br /> Barcelona, Barcelona <br /> Espa&ntilde;a </b> </p> 
+              <table id="criticalInfo-costBreakdown"> 
+               <tbody>
+                <tr> 
+                 <td class="total"> <strong>Importe total del pedido (IVA incluido si corresponde): </strong> <br /> </td> 
+                 <td class="total-value"> <strong>EUR 8,49</strong> </td> 
+                </tr> 
+                <tr> 
+                 <td rowspan="2" class="nonTotalInformation"> M&eacute;todo de pago seleccionado: </td> 
+                 <td class="price nonTotalInformation-value"> Mastercard </td> 
+                </tr> 
+                <tr></tr> 
+                <tr> 
+                 <td colspan="2" class="end"></td> 
+                </tr> 
+                <tr> 
+                 <td colspan="2" class="divider"></td> 
+                </tr> 
+               </tbody>
+              </table> </td>
+            </tr> 
+           </tbody>
+          </table> </td> 
+        </tr> 
+        <tr> 
+         <td style="padding-left:32px;"> 
+          <table style="width:95%;" id="itemDetails"> 
+           <tbody>
+            <tr> 
+             <td class="photo"> <a href="https://www.amazon.es/gp/r.html?C=3M2WIG6WX58VI&K=1DKI2DIF4Y4X8&M=urn:rtn:msg:2022062115594067de7d7e5765406c9871c8827500p0eu&R=1HCFPXYIV02J&T=C&U=https%3A%2F%2Fwww.amazon.es%2Fdp%2FB08J3TZSPM%2Fref%3Dpe_27091411_487056151_TE_item_image&H=YCHKHZRNVWEA9BXETMZDMODKPM0A&ref_=pe_27091411_487056151_TE_item_image"> <img id="asin" src="https://m.media-amazon.com/images/I/31--D+cAo9L._SY115_SX115_.jpg" /> </a> </td> 
+             <td class="name"> <a href="https://www.amazon.es/gp/r.html?C=3M2WIG6WX58VI&K=1DKI2DIF4Y4X8&M=urn:rtn:msg:2022062115594067de7d7e5765406c9871c8827500p0eu&R=L2R0RLKM0VE2&T=C&U=https%3A%2F%2Fwww.amazon.es%2Fdp%2FB08J3TZSPM%2Fref%3Dpe_27091411_487056151_TE_item&H=IXVLED3QUAVIDVDXGMFTZJ8IBUIA&ref_=pe_27091411_487056151_TE_item"> Aceite de S&eacute;samo bio 500 ml Naturitas | Primera presi&oacute;n en fr&iacute;o | Sabor intenso y arom&aacute;tico | Sin conservantes </a> <br /> Condici&oacute;n: Nuevo <br /> Vendido por <a href="https://www.amazon.es/gp/r.html?C=3M2WIG6WX58VI&K=1DKI2DIF4Y4X8&M=urn:rtn:msg:2022062115594067de7d7e5765406c9871c8827500p0eu&R=1YKW3VUTK9HJF&T=C&U=https%3A%2F%2Fwww.amazon.es%2Fgp%2Fhelp%2Fseller%2Fhome.html%3Fref_%3Dpe_27091411_487056151_TE_seller%26ie%3DUTF8%26seller%3DA2BN0XZWDVL5XE&H=6DAH1IWGT2NGCAYM7IOR0QWHA3OA&ref_=pe_27091411_487056151_TE_seller">CURAE SOLUTIONS SL</a> </td> 
+             <td class="price"> <strong>EUR 8,49</strong> <br /> </td> 
+            </tr> 
+           </tbody>
+          </table> </td> 
+        </tr> 
+        <tr> 
+         <td> 
+          <table id="selfService"> 
+           <tbody>
+            <tr> 
+             <td> <p> Si tienes un dispositivo m&oacute;vil, puedes utilizar la <a href="https://www.amazon.es/gp/r.html?C=3M2WIG6WX58VI&K=1DKI2DIF4Y4X8&M=urn:rtn:msg:2022062115594067de7d7e5765406c9871c8827500p0eu&R=27MPJOYKW0CR8&T=C&U=https%3A%2F%2Fwww.amazon.es%2Fb%3Fnode%3D5061838031%26ref%3DTE_%26ref_%3Dpe_27091411_487056151&H=XFLBW9KYTRQCL0MILUQV9K7PVCKA&ref_=pe_27091411_487056151">Aplicaci&oacute;n gratuita de Amazon</a> para recibir notificaciones acerca del estado de tu pedido y localizarlo en cualquier momento. </p> </td> 
+            </tr> 
+           </tbody>
+          </table> </td> 
+        </tr> 
+        <tr> 
+         <td> 
+          <table id="closing"> 
+           <tbody>
+            <tr> 
+             <td> <p> Esperamos volver a verte pronto. <br /> <span class="signature"> <strong>Amazon.es</strong> </span> </p> </td> 
+            </tr> 
+           </tbody>
+          </table> </td> 
+        </tr> 
+        <tr> 
+         <td> 
+          <table id="marketingContent"> 
+           <tbody>
+            <tr> 
+             <td class="recs">
+              <!--rbd--> 
+              <div class="celwidget pd_rd_w-uyuZX content-id-amzn1.sym.b63eb7ee-e3f1-4e70-b8db-fc092588957b pf_rd_p-b63eb7ee-e3f1-4e70-b8db-fc092588957b pf_rd_r-FFQJ1KQRGHFAS23JP8XX pd_rd_wg-lLFLN pd_rd_r-5b4bc65c-374f-48b1-bfd8-29094f6ecc8e c-f" cel_widget_id="p13n-asin-list-plain_email-order-confirmation_0" data-csa-c-content-id="amzn1.sym.b63eb7ee-e3f1-4e70-b8db-fc092588957b" data-csa-c-slot-id="email-order-confirmation-1" data-csa-c-type="widget" data-csa-c-painter="p13n-asin-list-plain-cards">
+               <script>if(window.mix_csa){window.mix_csa('[cel_widget_id="p13n-asin-list-plain_email-order-confirmation_0"]', 'CardInstancegDg_VXI0Y3tMcATeUX68pw')('mark', 'bb')}</script> 
+               <script>if(window.uet){window.uet('bb','p13n-asin-list-plain_email-order-confirmation_0',{wb: 1})}</script> 
+               <style>._p13n-asin-list-plain_truncationStyles_p13n-sc-css-line-clamp-1__1Fn1y{-webkit-line-clamp:1;-webkit-box-orient:vertical;display:-webkit-box;overflow:hidden}._p13n-asin-list-plain_truncationStyles_p13n-sc-css-line-clamp-2__EWgCb{-webkit-line-clamp:2;-webkit-box-orient:vertical;display:-webkit-box;overflow:hidden}._p13n-asin-list-plain_truncationStyles_p13n-sc-css-line-clamp-3__g3dy1{-webkit-line-clamp:3;-webkit-box-orient:vertical;display:-webkit-box;overflow:hidden}._p13n-asin-list-plain_truncationStyles_p13n-sc-css-line-clamp-4__2q2cc{-webkit-line-clamp:4;-webkit-box-orient:vertical;display:-webkit-box;overflow:hidden}._p13n-asin-list-plain_truncationStyles_p13n-sc-css-line-clamp-5__2l-dX{-webkit-line-clamp:5;-webkit-box-orient:vertical;display:-webkit-box;overflow:hidden}._p13n-asin-list-plain_truncationStyles_p13n-sc-css-line-clamp-6__28daG{-webkit-line-clamp:6;-webkit-box-orient:vertical;display:-webkit-box;overflow:hidden}._p13n-asin-list-plain_truncationStyles_p13n-sc-css-line-clamp-7__1k_Mc{-webkit-line-clamp:7;-webkit-box-orient:vertical;display:-webkit-box;overflow:hidden}._p13n-asin-list-plain_truncationStyles_p13n-sc-css-line-clamp-8__1yvsR{-webkit-line-clamp:8;-webkit-box-orient:vertical;display:-webkit-box;overflow:hidden}._p13n-asin-list-plain_truncationStyles_p13n-sc-css-line-clamp-9__3Pofd{-webkit-line-clamp:9;-webkit-box-orient:vertical;display:-webkit-box;overflow:hidden}._p13n-asin-list-plain_truncationStyles_p13n-sc-css-line-clamp-10__mY8_7{-webkit-line-clamp:10;-webkit-box-orient:vertical;display:-webkit-box;overflow:hidden}
+._p13n-asin-list-plain_pillContainerStyle_p13nscPills__1KzwZ{margin-bottom:20px;margin-left:0;overflow:auto;white-space:nowrap}._p13n-asin-list-plain_pillContainerStyle_p13nscPills__1KzwZ::-webkit-scrollbar{background:transparent;width:0}._p13n-asin-list-plain_pillContainerStyle_p13nscPills__1KzwZ li{-webkit-box-pack:center;-ms-flex-pack:center;background-color:#f0f0f0;border:1px solid #f0f0f0;border-radius:8px;box-shadow:0 1px 2px 0 rgba(15,17,17,.2);color:#111;cursor:pointer;display:-webkit-inline-box;display:-ms-inline-flexbox;display:inline-flex;font-weight:500;justify-content:center;list-style-type:none;margin:1px 8px 2px 1px;min-width:44px;padding:8px;text-align:center;white-space:normal}._p13n-asin-list-plain_pillContainerStyle_p13nscPills__1KzwZ li button{background:none;border:none}._p13n-asin-list-plain_pillContainerStyle_p13nscPills__1KzwZ li.p13n-selected-pill{background-color:#e7f4f5;border-color:#c7e4e8;color:#007185}._p13n-asin-list-plain_pillContainerStyle_p13nscPills__1KzwZ li:hover.p13n-selected-pill{background-color:#daf1f3;border-color:#c7e4e8;color:#007185}._p13n-asin-list-plain_pillContainerStyle_p13nscPills__1KzwZ li:hover{background-color:#eee;border-color:#eee}._p13n-asin-list-plain_pillContainerStyle_p13nscPills__1KzwZ ._p13n-asin-list-plain_pillContainerStyle_unselected__q8wvT{background-color:#f4f4f4}._p13n-asin-list-plain_pillContainerStyle_spinnerContainer__Llfcc{min-height:100px;width:100%}._p13n-asin-list-plain_pillContainerStyle_spinnerContainer__Llfcc ._p13n-asin-list-plain_pillContainerStyle_p13nScSpinner__3lJFM{margin:20px auto auto}._p13n-asin-list-plain_pillContainerStyle_refinementPillCss__1fYG0{max-width:200px}
+._p13n-asin-list-plain_sponsoredLabel_sponsoredLabel__RxXGt{color:#555;font-size:11px;line-height:23px;margin-bottom:4px}
+.p13n-kebab-button-edit-recs-bottom-sheet{padding-left:10px}.p13n-edit-recs-kebab-wrapper{-ms-flex-negative:0;flex-shrink:0}.p13n-edit-your-recs-button{margin:17px 10px 0}.p13n-flex-container-edit-recs-bottom-sheet{-webkit-box-pack:justify;-ms-flex-pack:justify;-webkit-box-align:center;-ms-flex-align:center;align-items:center;display:-webkit-box;display:-ms-flexbox;display:flex;justify-content:space-between}
+.report-flag-hide{cursor:none;display:none}.report-flag{background-image:url(https://m.media-amazon.com/images/S/sash/vh8ofoqOd7XyRsk.png);background-repeat:no-repeat;background-size:15px 16px;cursor:pointer;height:16px;position:absolute;right:20px;top:35px;width:15px}.report-flag:hover{background-image:url(https://m.media-amazon.com/images/S/sash/WXxFP-k55X6KCh2.png)}.report-problem-modal-root{padding:14px 18px}
+._p13n-asin-list-plain_panelStyle_panel-text__3TtlT{width:220px}._p13n-asin-list-plain_panelStyle_panel-container__3ZNzh{float:left;width:238px}._p13n-asin-list-plain_panelStyle_panel-subsection__19oyW{padding-left:15px;padding-right:18px}._p13n-asin-list-plain_panelStyle_panel-logo-container__ucYMM{height:33px;margin-bottom:5px;width:220px}._p13n-asin-list-plain_panelStyle_panel-button__GP7zd{width:auto}
+._p13n-asin-list-plain_style_grid-cell__zFYyO{-webkit-box-pack:center;-ms-flex-pack:center;background-color:#fff;cursor:pointer;display:-webkit-box;display:-ms-flexbox;display:flex;justify-content:center;margin:10px;position:relative}.p13n-grid-overlay{overflow:hidden}._p13n-asin-list-plain_style_grid-row__3VsqC{display:-webkit-box;display:-ms-flexbox;display:flex;-ms-flex-wrap:wrap;flex-wrap:wrap;margin-bottom:22px;margin-left:25px;min-width:900px}._p13n-asin-list-plain_style_grid-column__UjCjt{-ms-flex-preferred-size:210px;flex-basis:210px;max-width:300px;min-width:210px}._p13n-asin-list-plain_style_grid-column__UjCjt,._p13n-asin-list-plain_style_grid-detail-column__2AJfX{border-bottom:1px solid #d5dbdb;border-top:1px solid #d5dbdb;border-color:#d5dbdb;border-style:solid;border-width:.5px 1px;margin-bottom:-1px;margin-left:-1px!important;margin-right:0!important;margin-top:0}._p13n-asin-list-plain_style_grid-detail-column__2AJfX{width:100%}._p13n-asin-list-plain_style_card__2VZFf,._p13n-asin-list-plain_style_expandedGridCell__15bML{-webkit-box-orient:vertical;-webkit-box-direction:normal;-ms-flex-flow:column;flex-flow:column;height:100%;margin-bottom:0;margin-top:0;padding:10px;position:relative;text-align:center}._p13n-asin-list-plain_style_expandedGridCell__15bML{cursor:pointer}._p13n-asin-list-plain_style_gridExpansion__2aNlg{-webkit-box-pack:center;-ms-flex-pack:center;-ms-flex-preferred-size:210px;-webkit-box-flex:1;-ms-flex-positive:1;background-color:#fff;display:-webkit-box;display:-ms-flexbox;display:flex;flex-basis:210px;flex-grow:1;justify-content:center;margin:10px}._p13n-asin-list-plain_style_overlayTitle__E6uXy{position:absolute;top:35%}._p13n-asin-list-plain_style_notInterestedMessage__2bIn5{position:absolute;top:50%}._p13n-asin-list-plain_style_image__rSmhM{opacity:.1}._p13n-asin-list-plain_style_feedbackRow__23bqz{margin-right:0!important}
+._p13n-asin-list-plain_canariesFeedbackModalStyle_p13n-flex-container-header-kebab__12qKs{-webkit-box-pack:justify;-ms-flex-pack:justify;-webkit-box-align:center;-ms-flex-align:center;align-items:center;display:-webkit-box;display:-ms-flexbox;display:flex;justify-content:space-between}
+._p13n-asin-list-plain_style_column__2x05O{grid-column:auto/span 1;margin-right:0!important}._p13n-asin-list-plain_style_grid-row__3daT_{display:grid;grid-template-columns:repeat(auto-fit,50%)}._p13n-asin-list-plain_style_card__3H7qC{margin-bottom:0;margin-top:0;padding:10px;position:relative;text-align:center}._p13n-asin-list-plain_style_card__3H7qC,._p13n-asin-list-plain_style_expandedColumn__1-66H{-webkit-box-orient:vertical;-webkit-box-direction:normal;-ms-flex-flow:column;flex-flow:column;height:100%;outline:.5px solid #d5dbdb}._p13n-asin-list-plain_style_expandedColumn__1-66H{-webkit-box-align:center;-ms-flex-align:center;align-items:center;display:-webkit-box;display:-ms-flexbox;display:flex;grid-column:auto/span 2;margin-right:0!important}._p13n-asin-list-plain_style_overlayTitle__2XUqy{position:absolute;top:35%}._p13n-asin-list-plain_style_notInterestedMessage__2-bO3{position:absolute;top:50%}._p13n-asin-list-plain_style_image__2eEq7{opacity:.1}._p13n-asin-list-plain_style_feedbackRow__17KjU{margin-right:0!important}
+._p13n-asin-list-plain_style_asin-title__2KJ6_{font-size:14px;font-weight:bolder;margin-left:20px;margin-top:10px;text-align:left}._p13n-asin-list-plain_style_asin-row__3PozI{display:block}._p13n-asin-list-plain_style_asin-detail-row__T7Jm0{margin-bottom:-12px}._p13n-asin-list-plain_style_image__11f2t{height:90px;width:90px}._p13n-asin-list-plain_style_feedback-switch__2zE08{cursor:pointer;display:inline-block;height:50px;margin-top:5px;vertical-align:top;width:50px}
+._p13n-asin-list-plain_maskStyle_maskStyling__1IlBq{background-color:#000;height:100%;left:0;opacity:.04;position:absolute;top:0;width:100%}._p13n-asin-list-plain_maskStyle_positionRelativeCss__ZwMqj{padding:6px;position:relative}._p13n-asin-list-plain_maskStyle_noop__3Xbw5{-webkit-perspective:none;perspective:none}
+._p13n-asin-list-plain_price_p13n-sc-price__3mJ9Z{word-wrap:normal}
+._p13n-asin-list-plain_style_card__2yY06{width:95%}._p13n-asin-list-plain_style_image-and-offer__XQEhq{display:-webkit-box;display:-ms-flexbox;display:flex;margin-bottom:0;margin-top:10px}._p13n-asin-list-plain_style_review-row__1d5Qn{padding-right:10px;width:100%}._p13n-asin-list-plain_style_row__1eL-2{width:100%}._p13n-asin-list-plain_style_icon__3kTmk{background-position:-310px -5px;height:1.6rem;width:1.6rem}
+._p13n-asin-list-plain_style_card__3UH71{text-align:left;width:95%}._p13n-asin-list-plain_style_close-icon-row__1UiN7{height:5px;padding-right:10px;text-align:right;width:100%}._p13n-asin-list-plain_style_close-icon-column__33S0b{height:inherit}._p13n-asin-list-plain_style_row__NdY00{width:100%}._p13n-asin-list-plain_style_icon___PtFG{background-position:-310px -5px;cursor:pointer;height:1.6rem;width:1.6rem}._p13n-asin-list-plain_style_feedbackText__1z8PE{cursor:pointer}
+._p13n-asin-list-plain_prime_p13n-prime-badge__GVM4h{position:relative;top:2px}
+input[type=number]::-webkit-inner-spin-button,input[type=number]::-webkit-outer-spin-button{-webkit-appearance:none;margin:0}input[type=number]{-moz-appearance:textfield}
+._p13n-asin-list-plain_bestsellerStyles_p13n-best-seller-badge__1-yh1{background-color:#c45500!important;font-size:12px;padding-bottom:2px;padding-top:2px}._p13n-asin-list-plain_bestsellerStyles_p13n-best-seller-badge__1-yh1:before{border-bottom-color:#c45500!important}._p13n-asin-list-plain_bestsellerStyles_p13n-best-seller-badge__1-yh1:after{border-top-color:#c45500!important}._p13n-asin-list-plain_bestsellerStyles_p13n-sc-bestseller-badge-body__3nkHf{background-color:#c45500;float:left;line-height:18px;padding-left:6px;padding-right:3px}._p13n-asin-list-plain_bestsellerStyles_p13n-sc-bestseller-badge-text__3apKt{color:#fff;line-height:18px}._p13n-asin-list-plain_bestsellerStyles_p13n-sc-bestseller-badge-triangle__2Z3cK{border-right:9px solid transparent;border-top:18px solid;color:#c45500;float:left;height:0;width:0}
+._p13n-asin-list-plain_amazonsChoiceStyles_p13n-ac-text-primary__2h8zx,._p13n-asin-list-plain_amazonsChoiceStyles_p13n-ac-text-secondary__17RUV{font-family:Amazon Ember,Arial!important;font-size:12px!important;line-height:22px}._p13n-asin-list-plain_amazonsChoiceStyles_p13n-ac-text-primary__2h8zx{color:#fff;margin-left:8px;margin-right:3px}._p13n-asin-list-plain_amazonsChoiceStyles_p13n-ac-text-secondary__17RUV{color:#f69931;margin-right:8px}._p13n-asin-list-plain_amazonsChoiceStyles_p13n-ac-body__3XXUM{background-color:#232f3e;border-color:#232f3e;display:-webkit-box;display:-ms-flexbox;display:flex;float:left;height:22px;min-width:80px}._p13n-asin-list-plain_amazonsChoiceStyles_p13n-ac-triangle__qo4WF{border-right:10px solid transparent;border-top:22px solid;color:#232f3e;float:left;height:0;width:0}
+._p13n-asin-list-plain_climatePledgeFriendlyBadgeStyles_p13n-sc-cpf-badge__dMVLV{color:#168342!important;text-decoration:none!important}._p13n-asin-list-plain_climatePledgeFriendlyBadgeStyles_p13n-sc-cpf-badge__dMVLV i{margin-top:0;vertical-align:middle}._p13n-asin-list-plain_climatePledgeFriendlyBadgeStyles_p13n-sc-cpf-cert-row__3PW-5{-webkit-box-align:center;-ms-flex-align:center;-webkit-box-orient:horizontal;-webkit-box-direction:normal;align-items:center;display:-webkit-box;display:-ms-flexbox;display:flex;-ms-flex-direction:row;flex-direction:row}._p13n-asin-list-plain_climatePledgeFriendlyBadgeStyles_p13n-sc-cpf-cert-logo__2T8hY{margin-right:18px;min-width:45px}._p13n-asin-list-plain_climatePledgeFriendlyBadgeStyles_p13n-sc-cpf-cert-column__1r84G{-webkit-box-orient:vertical;-webkit-box-direction:normal;display:-webkit-box;display:-ms-flexbox;display:flex;-ms-flex-direction:column;flex-direction:column}._p13n-asin-list-plain_climatePledgeFriendlyBadgeStyles_p13n-sc-cpf-cert-grid__2Z5J-{-webkit-box-orient:horizontal;-webkit-box-direction:normal;display:-webkit-box;display:-ms-flexbox;display:flex;-ms-flex-direction:row;flex-direction:row}._p13n-asin-list-plain_climatePledgeFriendlyBadgeStyles_p13n-sc-cpf-link__3r-aG{text-decoration:underline}._p13n-asin-list-plain_climatePledgeFriendlyBadgeStyles_p13n-sc-cpf-bottom-sheet__R9HFz{padding:21px 15px}
+._p13n-asin-list-plain_curationStyles_curation__13VGx{margin-bottom:0;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}._p13n-asin-list-plain_curationStyles_curation__13VGx ._p13n-asin-list-plain_curationStyles_icon__3_dKr{width:20px}
+._p13n-asin-list-plain_dealBadge_p13nDealOfTheDayBadge__2Nn7x{background:#b12704;color:#fff;padding:2px 4px}
+._p13n-asin-list-plain_dealInfo_p13nDealOfTheDay__cVlwZ{background:#b12704;color:#fff;float:right;padding:2px 4px;position:relative}._p13n-asin-list-plain_dealInfo_dealsCardDealTimer__2oYBO{display:inline-block}._p13n-asin-list-plain_dealInfo_dealsCardPercentClaimed__1GTDI{display:inline-block;padding-top:3px}
+._p13n-asin-list-plain_quantityPricingTable_qdPricingTableContainer__29w2z ._p13n-asin-list-plain_quantityPricingTable_qdPricingTable__1_iY1{border:none;border-collapse:separate;border-top:1px solid #e7e7e7}._p13n-asin-list-plain_quantityPricingTable_qdPlaceholderRow__1ry1S ._p13n-asin-list-plain_quantityPricingTable_quantityColumn__2sfjE{border-left:3px solid #d77d32}._p13n-asin-list-plain_quantityPricingTable_qdPricingTableContainer__29w2z ._p13n-asin-list-plain_quantityPricingTable_qdPricingTable__1_iY1 ._p13n-asin-list-plain_quantityPricingTable_qdRow__2WzQJ{background-color:#fff;cursor:pointer}._p13n-asin-list-plain_quantityPricingTable_mobile__2LnqI._p13n-asin-list-plain_quantityPricingTable_qdTableInput__1Z2G6{width:95%}._p13n-asin-list-plain_quantityPricingTable_qdTableInput__1Z2G6{float:left;margin:10px}._p13n-asin-list-plain_quantityPricingTable_closeButton__3sVAs{background-color:#eee;border-radius:5px;cursor:pointer;float:right;font-weight:100;height:30px;line-height:.85;margin:10px 10px 10px 0;text-align:center;width:30px}
+._p13n-asin-list-plain_quantityDiscounts_qdMessage__3xK5j{color:#007185}._p13n-asin-list-plain_quantityDiscounts_qdMessage__3xK5j:hover{color:#c45000}
+._p13n-asin-list-plain_sponsoredLabel_sponsoredLabel__2UvSK{color:#555;font-size:11px}
+._p13n-asin-list-plain_delightPricingStyles_p13n-delight-pricing-badge__26S9Q{background:#b12704;color:#fff;display:inline-block;padding:2px 10px;position:relative}
+._p13n-asin-list-plain_couponStyles_p13n-coupon-badge__3d5NR{background:#7fda69;color:#111;display:inline-block;padding:0 6px;position:relative}
+._p13n-asin-list-plain_feedbackModalStyle_p13n-popover-button-divider__2kOw5{margin:6px 0}._p13n-asin-list-plain_feedbackModalStyle_p13n-feedback-popover-button__2fDFF{background:url(https://m.media-amazon.com/images/G/01/x-locale/personalization/core-recs/canaries/kebabgrey_18.png) no-repeat 0 0;background-size:18px;display:block;height:18px;text-decoration:none;width:18px}._p13n-asin-list-plain_feedbackModalStyle_p13n-feedback-popover-button__2fDFF:hover{background-position:0 -18px}._p13n-asin-list-plain_feedbackModalStyle_p13n-feedback-modal-height__3gqUN{height:450px}._p13n-asin-list-plain_feedbackModalStyle_p13n-desktop-feedback-kebab-wrapper__Mc9xE{margin:0 3px 15px 10px}._p13n-asin-list-plain_feedbackModalStyle_p13n-desktop-feedback-modal-center-utils__3eFTM{height:35px;margin-top:10px;text-align:center}
+._p13n-asin-list-plain_style_welcome__2Dav7{background:-webkit-linear-gradient(#01a4b5,#008296,#383e3e);background:linear-gradient(#01a4b5,#008296,#383e3e);color:#fff;padding:40px;text-align:center}._p13n-asin-list-plain_style_welcome__2Dav7 h1{font-size:4em}._p13n-asin-list-plain_style_welcome__2Dav7 h2{font-size:2.5em}._p13n-asin-list-plain_style_example__286SK{padding:40px}</style> 
+               <!--CardsClient-->
+               <table style="width:100%" id="CardInstancegDg_VXI0Y3tMcATeUX68pw" data-card-metrics-id="p13n-asin-list-plain_email-order-confirmation_0">
+                <tbody>
+                 <tr>
+                  <td>
+                   <table width="100%" bgcolor="#FFFFFF" style="vertical-align:central;background:white">
+                    <tbody>
+                     <tr>
+                      <td style="font:18px Arial,sans-serif;text-decoration:none;color:#cc6600;padding:10px">Productos de mi Lista de deseos</td>
+                     </tr>
+                    </tbody>
+                   </table></td>
+                 </tr>
+                 <tr>
+                  <td>
+                   <table width="100%" cellspacing="0" cellpadding="0" border="0" style="vertical-align:central;background:white">
+                    <tbody>
+                     <tr>
+                      <td width="48%" bgcolor="#ffffff" style="vertical-align:middle"><a href="https://www.amazon.es/gp/r.html?C=3M2WIG6WX58VI&K=1DKI2DIF4Y4X8&M=urn:rtn:msg:2022062115594067de7d7e5765406c9871c8827500p0eu&R=RMVFC022PHC0&T=C&U=https%3A%2F%2Fwww.amazon.es%2FUncontrollability-World-Hartmut-Rosa%2Fdp%2F1509543163%2Fref%3Dpe_27091411_487056151_wlr_1%2F257-3618436-9314515%2Fref%3Dwlr%3F_encoding%3DUTF8%26pd_rd_i%3D1509543163%26psc%3D1%26pd_rd_w%3DuyuZX%26content-id%3Damzn1.sym.b63eb7ee-e3f1-4e70-b8db-fc092588957b%26pf_rd_p%3Db63eb7ee-e3f1-4e70-b8db-fc092588957b%26pf_rd_r%3DFFQJ1KQRGHFAS23JP8XX%26pd_rd_wg%3DlLFLN%26pd_rd_r%3D5b4bc65c-374f-48b1-bfd8-29094f6ecc8e&H=IUGOCM4JA9Z0LINMU4A4GAVILJIA&ref_=pe_27091411_487056151_wlr_1" style="text-decoration:none">
+                        <table>
+                         <tbody>
+                          <tr>
+                           <td align="center" style="min-width:80px;padding:12px 5px 10px 5px;vertical-align:middle"><img style="margin:0 8px 0 8px" src="https://m.media-amazon.com/images/I/61piYk3AxjS._AC_SX80_SY80_SS80_.jpg" alt="The Uncontrollability of the World" width="80" height="80" /></td>
+                           <td style="padding:12px 5px 10px 5px;vertical-align:middle">
+                            <table>
+                             <tbody>
+                              <tr>
+                               <td><p style="font:13px Arial,sans-serif;text-decoration:none;color:#666666">The Uncontrollability of the World</p></td>
+                              </tr>
+                              <tr>
+                               <td><span style="font:13px Arial,sans-serif;text-decoration:none;color:#666666">18,67&nbsp;€</span><span style="vertical-align:-3px"><img style="margin:0px 5px" src="https://m.media-amazon.com/images/G/01/StreamDEX/prime_badge_small.png" border="0" alt="Prime shipping available" /></span></td>
+                              </tr>
+                             </tbody>
+                            </table></td>
+                          </tr>
+                         </tbody>
+                        </table></a></td>
+                      <td width="48%" bgcolor="#ffffff" style="vertical-align:middle"><a href="https://www.amazon.es/gp/r.html?C=3M2WIG6WX58VI&K=1DKI2DIF4Y4X8&M=urn:rtn:msg:2022062115594067de7d7e5765406c9871c8827500p0eu&R=2IJ8690UWQ4R8&T=C&U=https%3A%2F%2Fwww.amazon.es%2FBiotrue-Multi-Purpose-Solution-Contact-Lenses%2Fdp%2FB003H03SDQ%2Fref%3Dpe_27091411_487056151_wlr_2%2F257-3618436-9314515%2Fref%3Dwlr%3F_encoding%3DUTF8%26pd_rd_i%3DB003H03SDQ%26psc%3D1%26pd_rd_w%3DuyuZX%26content-id%3Damzn1.sym.b63eb7ee-e3f1-4e70-b8db-fc092588957b%26pf_rd_p%3Db63eb7ee-e3f1-4e70-b8db-fc092588957b%26pf_rd_r%3DFFQJ1KQRGHFAS23JP8XX%26pd_rd_wg%3DlLFLN%26pd_rd_r%3D5b4bc65c-374f-48b1-bfd8-29094f6ecc8e&H=WFT13QRK9KZB2SERBKMUMODPSQGA&ref_=pe_27091411_487056151_wlr_2" style="text-decoration:none">
+                        <table>
+                         <tbody>
+                          <tr>
+                           <td align="center" style="min-width:80px;padding:12px 5px 10px 5px;vertical-align:middle"><img style="margin:0 8px 0 8px" src="https://m.media-amazon.com/images/I/818PpnffCNL._AC_SX80_SY80_SS80_.jpg" alt="Biotrue Multi-Purpose Solution for Soft Contact Lenses (Pack of 2)" width="80" height="80" /></td>
+                           <td style="padding:12px 5px 10px 5px;vertical-align:middle">
+                            <table>
+                             <tbody>
+                              <tr>
+                               <td><p style="font:13px Arial,sans-serif;text-decoration:none;color:#666666">Biotrue Multi-Purpose Solution for...</p></td>
+                              </tr>
+                              <tr>
+                               <td><span style="font:13px Arial,sans-serif;text-decoration:none;color:#666666">28,90&nbsp;€</span><span style="vertical-align:-3px"><img style="margin:0px 5px" src="https://m.media-amazon.com/images/G/01/StreamDEX/prime_badge_small.png" border="0" alt="Prime shipping available" /></span></td>
+                              </tr>
+                             </tbody>
+                            </table></td>
+                          </tr>
+                         </tbody>
+                        </table></a></td>
+                     </tr>
+                    </tbody>
+                   </table></td>
+                 </tr>
+                </tbody>
+               </table>
+               <script>if(window.mix_csa){window.mix_csa('[cel_widget_id="p13n-asin-list-plain_email-order-confirmation_0"]', 'CardInstancegDg_VXI0Y3tMcATeUX68pw')('mark', 'be')}</script> 
+               <script>if(window.uet){window.uet('be','p13n-asin-list-plain_email-order-confirmation_0',{wb: 1})}</script> 
+               <script>if(window.mixTimeout){window.mixTimeout('p13n-asin-list-plain', 'CardInstancegDg_VXI0Y3tMcATeUX68pw', 90000)};
+P.when('mix:@amzn/mix.client-runtime', 'mix:p13n-asin-list-plain__RudJ2_as').execute(function (runtime, cardModule) {runtime.registerCardFactory('CardInstancegDg_VXI0Y3tMcATeUX68pw', cardModule).then(function(){if(window.mix_csa){window.mix_csa('[cel_widget_id="p13n-asin-list-plain_email-order-confirmation_0"]', 'CardInstancegDg_VXI0Y3tMcATeUX68pw')('mark', 'functional')}if(window.uex){window.uex('ld','p13n-asin-list-plain_email-order-confirmation_0',{wb: 1})}});});
+</script> 
+               <script>P.load.js('https://images-eu.ssl-images-amazon.com/images/I/01NlpP60zWL.js?xcp');
+</script> 
+              </div></td> 
+            </tr> 
+           </tbody>
+          </table> </td> 
+        </tr> 
+        <tr> 
+         <td> 
+          <table id="legalCopy"> 
+           <tbody>
+            <tr> 
+             <td> <p> Los productos designados como &quot;<a href="https://www.amazon.es/gp/f.html?C=3M2WIG6WX58VI&K=1DKI2DIF4Y4X8&M=urn:rtn:msg:2022062115594067de7d7e5765406c9871c8827500p0eu&R=3OZA539J520U8&T=C&U=https%3A%2F%2Fwww.amazon.es%2Flogistica_amazon%3Fref_%3Dpe_27091411_487056151_TE_helpfba&H=AEE78LVP9YALAMFKMZKG4NC7TUCA&ref_=pe_27091411_487056151_TE_helpfba">Log&iacute;stica de Amazon</a>&quot; o &quot;Gestionados por Amazon&quot; se venden por vendedores externos en Amazon Marketplace, pero Amazon se encarga de su almacenaje y distribuci&oacute;n. Los Productos Reacondicionados de Amazon tambi&eacute;n son designados como “Log&iacute;stica de Amazon” o “Gestionados por Amazon”. Productos Reacondicionados es un nombre comercial para Amazon EU S.a.r.L., y es parte del grupo Amazon.com. </p> <p> Se aplica el IVA a todos los productos vendidos por Amazon EU S.a.r.L., si corresponde, seg&uacute;n la legislaci&oacute;n local de cada pa&iacute;s. Si tu pedido contiene productos vendidos por vendedores externos, es posible que estos tambi&eacute;n est&eacute;n sujetos al IVA seg&uacute;n las pol&iacute;ticas y pa&iacute;s del vendedor. M&aacute;s informaci&oacute;n acerca del <a href="https://www.amazon.es/gp/f.html?C=3M2WIG6WX58VI&K=1DKI2DIF4Y4X8&M=urn:rtn:msg:2022062115594067de7d7e5765406c9871c8827500p0eu&R=2JIYU2I6O2ST3&T=C&U=https%3A%2F%2Fwww.amazon.es%2Fiva_marketplace%3Fref_%3Dpe_27091411_487056151_TE_vat&H=IVJQGYDDN8ODIW7IDMEZXAOA5WKA&ref_=pe_27091411_487056151_TE_vat">IVA sobre bienes vendidos en Amazon Marketplace</a>. </p> <p>Para productos comprados a trav&eacute;s de nuestro <a href="https://www.amazon.es/gp/f.html?C=3M2WIG6WX58VI&K=1DKI2DIF4Y4X8&M=urn:rtn:msg:2022062115594067de7d7e5765406c9871c8827500p0eu&R=1RK6V3K3XE0RO&T=C&U=https%3A%2F%2Fwww.amazon.es%2Fmarketplace%3Fref_%3Dpe_27091411_487056151_TE_mpen&H=2MWJXDV6QVRYY86PCWDL8IDXLA0A&ref_=pe_27091411_487056151_TE_mpen">Marketplace</a>, te informamos de que es posible que el vendedor se ponga en contacto contigo para solicitarte informaci&oacute;n de facturaci&oacute;n como por ejemplo tu n&uacute;mero CIF/NIF. </p> </td> 
+            </tr> 
+            <tr> 
+             <td style="padding: 0;"> <p>Nuestras pol&iacute;ticas de <a href="https://www.amazon.es/gp/f.html?C=3M2WIG6WX58VI&K=1DKI2DIF4Y4X8&M=urn:rtn:msg:2022062115594067de7d7e5765406c9871c8827500p0eu&R=18O4C7PMV2DU1&T=C&U=https%3A%2F%2Fwww.amazon.es%2Fpolitica_devoluciones%3Fref_%3Dpe_27091411_487056151_TE_ret&H=YTD65KFMHXQODDKQ7T5USKV4KSYA&ref_=pe_27091411_487056151_TE_ret">devoluciones</a> y <a href="https://www.amazon.es/gp/f.html?C=3M2WIG6WX58VI&K=1DKI2DIF4Y4X8&M=urn:rtn:msg:2022062115594067de7d7e5765406c9871c8827500p0eu&R=1Y0DCK4IIBWRV&T=C&U=https%3A%2F%2Fwww.amazon.es%2Fpolitica_reembolsos%3Fref_%3Dpe_27091411_487056151_TE_ref&H=A6FCNFXE9DO5IL9WE9MONXLDM8QA&ref_=pe_27091411_487056151_TE_ref">reembolsos</a> son aplicables a todos los productos que compras en nuestro sitio web. Adem&aacute;s de la garant&iacute;a de devoluci&oacute;n de 30 d&iacute;as, los clientes residentes en la Uni&oacute;n Europea tendr&aacute;n un derecho legal de desistimiento/devoluci&oacute;n de catorce d&iacute;as naturales (salvo en los casos previstos en esta pol&iacute;tica, tales como compras de v&iacute;deos, DVD, audio, videojuegos y productos de software cuyos precintos hayan sido abiertos). </p> </td> 
+            </tr> 
+            <tr> 
+             <td style="padding: 0;"> <p>Existen hojas de reclamaciones a tu disposici&oacute;n. Ponte en contacto con el <a href="https://www.amazon.es/gp/r.html?C=3M2WIG6WX58VI&K=1DKI2DIF4Y4X8&M=urn:rtn:msg:2022062115594067de7d7e5765406c9871c8827500p0eu&R=RSXUP33BDLNJ&T=C&U=https%3A%2F%2Fwww.amazon.es%2Fgp%2Fhelp%2Fcustomer%2Fcontact-us%3Fref_%3Dpe_27091411_487056151_TE_cu&H=F1QSAEQH1MAC4S4PCB1LQVNMI1CA&ref_=pe_27091411_487056151_TE_cu">Servicio de Atenci&oacute;n al Cliente</a>. </p> </td> 
+            </tr> 
+            <tr> 
+             <td style="padding: 0;"> <p>Nota: este correo ha sido enviado desde una direcci&oacute;n de e-mail que no acepta correos entrantes. Por favor, no respondas a este e-mail. </p> </td> 
+            </tr> 
+           </tbody>
+          </table> </td> 
+        </tr> 
+       </tbody>
+      </table> </td> 
+    </tr> 
+   </tbody>
+  </table>  
+ <img width="1" height="1" src="https://www.amazon.es/gp/r.html?C=3M2WIG6WX58VI&K=1DKI2DIF4Y4X8&M=urn:rtn:msg:2022062115594067de7d7e5765406c9871c8827500p0eu&R=99H6HGKPQGWW&T=E&U=https%3A%2F%2Fimages-eu.ssl-images-amazon.com%2Fimages%2FG%2F01%2Fnav%2Ftransp.gif&H=EAC5KXPGAXU1IXF6MDY7UEX85MYA&ref_=pe_27091411_487056151_open" /></body>
+</html>
