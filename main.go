@@ -53,15 +53,16 @@ func (d *dumper) dump(args []string) int {
 		log.Fatal(err)
 	}
 
-	selector := "#main > tbody:nth-child(1) > tr:nth-child(7) > td:nth-child(1) > table:nth-child(1) > tbody:nth-child(1) > tr:nth-child(1) > td:nth-child(2) > a:nth-child(1)"
+	selector := "table#itemDetails a"
 	doc.Find(selector).Each(func(i int, s *goquery.Selection) {
 		title := s.Text()
 		fmt.Printf("Review %d: %s\n", i, title)
 	})
 
-	orderNumberSelector := "#main > tbody:nth-child(1) > tr:nth-child(8) > td:nth-child(1) > table:nth-child(1) > tbody:nth-child(1) > tr:nth-child(1) > td:nth-child(1) > a:nth-child(1)"
+	orderNumberSelector := "#orderDetails a"
 	doc.Find(orderNumberSelector).Each(func(i int, s *goquery.Selection) {
-		fmt.Printf("Order %s\n", s.Text())
+		fmt.Printf("Order: %s\n", s.Text())
+		// fmt.Printf("Date: %s\n", s.Find("span").Text())
 	})
 	return 0
 }
