@@ -6,6 +6,7 @@ import (
 
 	"github.com/PuerkitoBio/goquery"
 	"github.com/shopspring/decimal"
+	"github.com/ztrue/tracerr"
 )
 
 type OrderInfo struct {
@@ -106,7 +107,7 @@ func extractCurrencyAndPrice(input string) (string, decimal.Decimal, error) {
 
 	d, err := decimal.NewFromString(num)
 	if err != nil {
-		return "", decimal.Decimal{}, err
+		return "", decimal.Decimal{}, tracerr.Wrap(err)
 	}
 
 	return parts[0], d, nil
@@ -128,7 +129,7 @@ func parseHTML(html string) ([]OrderInfo, error) {
 		pStr := prices[i]
 		currency, price, err := extractCurrencyAndPrice(pStr)
 		if err != nil {
-			log.Fatalln(err)
+			return []OrderInfo{}, tracerr.Wrap(err)
 		}
 
 		o := OrderInfo{
